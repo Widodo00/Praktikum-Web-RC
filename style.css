@@ -1,0 +1,58 @@
+header{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    background-color: orange;
+}
+
+h1{
+    padding-left: 10px;
+}
+
+nav{
+    background-color: maroon;
+    color: white;
+}
+
+footer{
+    background-color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    margin: 50px 50px 10px 50px;
+    border: 2px solid black;
+}
+
+.nav{
+    color: white;
+    margin-left: 50px;
+}
+
+.nav:hover{
+    color: yellow;
+}
+
+.MainContent{
+    background-color: gainsboro;
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.ContentBerita{
+    background-color:springgreen;
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+}
+
+.container{
+    display: flex;
+    height: auto;
+    width: auto;
+}
