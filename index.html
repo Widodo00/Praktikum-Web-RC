@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas 3</title>
+</head>
+<body>
+    <p>
+        Select theme: 
+        <select onchange="warna(this.value)">
+            <option value="white">White</option>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+        </select>
+    </p>
+    <h1>This is my website</h1>
+    <p>
+        Select the weather type today: 
+        <select onchange="cuaca(this.value)" id="cuaca">
+            <option value="sunny">Sunny</option>
+            <option value="rainy">Rainy</option>
+            <option value="cloudy">Cloudy</option>
+            <option value="hot">Hot</option>
+        </select>
+    </p>
+    <p id="hasilcuaca"></p>
+    <form id=form>
+        Input number: 
+        <input type="number" id="nilai">
+        <input type="submit" value="Get Factorial">
+    </form>
+    <p id="hasilfaktorial"></p>
+    <script>
+        function warna(value){
+            body = document.querySelector('body');
+            document.body.style.backgroundColor=value;
+            if (value=='white'||value=="red"){
+                document.body.style.color="black";
+            }else{
+                document.body.style.color="white";
+            }
+        }
+        function cuaca(value){
+            var hasilcuaca = document.getElementById("hasilcuaca");
+            if (value=='sunny'){
+                hasilcuaca.innerText="It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream";
+            }else if(value=='rainy'){
+                hasilcuaca.innerText="Rain is falling outside; take a rain coat and a brolly, and don't stay out for too long."
+            }else if(value=='cloudy'){
+                hasilcuaca.innerText="The sky is getting cloudy, if you want to go out it is advisable to bring an umbrella because it might rain.."
+            }else if(value=='hot'){
+                hasilcuaca.innerText="The weather is very hot right now. Use sunblock if you want to go out so your skin is not exposed to the hot sun."
+            }
+        }
+        var frm=document.getElementById("form");
+        frm.onsubmit=function(){
+            var nilai=document.getElementById("nilai").value;
+            var hasilfaktorial=document.getElementById("hasilfaktorial");
+            var i, j=1;
+            for (i=1;i<=nilai;i++){
+                j*=i;
+            }
+            hasilfaktorial.innerText="The factorial of "+nilai+" is "+j;
+            return false;
+        }
+    </script>
+</body>
+</html>
