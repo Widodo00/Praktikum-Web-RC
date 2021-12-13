@@ -18,3 +18,5 @@ jangan lupa tambahkan hasil screenshoot web di dalam file
 Nama  : Widodo
 <br>
 NIM   : 119140156
+<br>
+Modifikasi : Menambahkan "required" pada form login
